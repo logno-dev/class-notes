@@ -1,8 +1,6 @@
 ---
 title: "Basic JavaScript"
 description: "The very basics of programming represented in JavaScript syntax"
-pubDate: "Oct 25 2024"
-published: true
 sidebar:
   order: 2
 ---
@@ -11,11 +9,11 @@ If you haven't heard it 1,000 times yet, you certainly will if you stick to this
 
 I'm choosing JavaScript to show you these concepts for several reasons. One being that it is popular. Popular in that it is used commonly, not necessarily that the masses hold it in high regard. Beyond that, the syntax is "C-like", meaning that it follows a basic style derived from the C programming language, which is common among many languages. Finally, it runs easily in a web browser, so we don't have to fiddle with a compiler or interpreter (more on those later) to run some basic code.
 
-### Basics
+## Basics
 
 It is always hard to say where the beginning is when approaching a topic as broad as programming. So somewhat arbitrarily, I will start with variables and constants.
 
-#### Variables
+### Variables
 
 If you really break it down, programming is just a process of modifying data. Data can come in many forms. One of the most basic forms is in that of a variable or a constant. A variable or constant is essentially just a name that we add a value to. Like so:
 
@@ -29,11 +27,11 @@ var myOldVarialbe = "this string is likely out of date";
 
 Firstly, I'd like to distinguish a constant from a variable.
 
-##### Constants
+#### Constants
 
 A constant is a value that cannot (or should not) be changed during the life of the program. In technical terms, a constant is immutable. Constants are useful to declare values that will be used several times throughout a program, but there is no need for the program to manipulate the value of it. If you were writing a game and you wanted to set a universal value for gravity, you would like declare `GRAVITY` as a constant.
 
-##### Variables
+#### Variables
 
 A variable, as the name suggests, can have a value that can be changed, or a value that is mutable. This means that the value can not only be manipulated and changed, but the value can also be re-assigned (more on assignment later).
 
@@ -58,7 +56,7 @@ In the above example, the second `const` is not re-assigned, only a value within
 
 If all that is a bit confusing, just know that when declaring constants and variables in JavaScript, you should **always** reach for `const` first. If `const` gives you a problem, move to `let`. But you should _never_ use `var`.
 
-#### Declaration and Assignment
+### Declaration and Assignment
 
 Thus far, I have taken for granted a few concepts. Declaration and assignment of variables has few points that deserve a bit of explanation.
 

@@ -13,6 +13,9 @@ export default defineConfig({
         starlight({
             title: "Class Notes",
             customCss: ["./src/styles/custom.css"],
+            editLink: {
+                baseUrl: "https://github.com/logno-dev/class-notes/",
+            },
         }),
         sitemap(),
         mdx(),
