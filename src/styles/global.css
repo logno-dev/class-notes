@@ -1,7 +1,16 @@
 :root {
 	--bg: black;
+	--bg-alt: #333;
 	--fc: white;
 	--accent: #ff7913;
+	--accent-two: #142d45;
+	background-color: var(--bg);
+}
+
+html {
+	background: var(--bg);
+	background: radial-gradient(circle at top, var(--accent-two), var(--bg) 90vh) no-repeat;
+	padding: 0;
 }
 
 @font-face {
@@ -25,8 +34,6 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--bg);
-	background: radial-gradient(circle at top, #142d45, var(--bg) 50%) no-repeat;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--fc));
@@ -115,7 +122,7 @@ img {
 
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--bg-alt));
+	background-color: var(--bg-alt);
 	border-radius: 2px;
 }
 
