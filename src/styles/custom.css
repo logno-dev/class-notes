@@ -1,5 +1,11 @@
 :root {
-	--sl-color-gray-6: hsl(224, 10%, 5%);
+	--sl-color-gray-6: hsl(209, 55%, 5%);
+	--sl-color-black: hsl(209, 25%, 10%);
 	--sl-color-text-accent: #ff7913;
 	--sl-color-bg-accent: #142d45;
+}
+
+:root[data-theme="light"],
+[data-theme="light"] ::backdrop {
+	--sl-color-text-accent: hsl(209, 55%, 40%);
 }

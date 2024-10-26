@@ -3,6 +3,8 @@ title: "Basic JavaScript"
 description: "The very basics of programming represented in JavaScript syntax"
 pubDate: "Oct 25 2024"
 published: true
+sidebar:
+  order: 2
 ---
 
 If you haven't heard it 1,000 times yet, you certainly will if you stick to this; syntax will be different but programming concepts are the same in all languages.

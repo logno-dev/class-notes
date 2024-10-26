@@ -1,6 +1,8 @@
 ---
 title: "Get Started"
 description: "Learn about coding and stuff"
+sidebar:
+  order: 1
 ---
 
 Here you will find a series of articles on various coding topics.
