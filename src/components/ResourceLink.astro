@@ -1,0 +1,26 @@
+---
+const { href, title } = Astro.props
+---
+
+<a href={href} class="resource-card">
+	<h3>{title}</h3>
+	<p>
+		<slot />
+	</p>
+</a>
+
+<style>
+a.resource-card {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border-radius: 14px;
+	background-color: #FFFFFF24;
+	color: var(--fc);
+	text-decoration: none;
+}
+
+a.resource-card:hover {
+	background-color: #FFFFFF33;
+}
+</style>

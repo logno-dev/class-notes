@@ -1,0 +1,24 @@
+---
+import ResourceLink from "./ResourceLink.astro"
+
+type Resource = {
+	title: string,
+	href: string,
+	body: string
+}
+
+
+const resourceList: Resource[] = [
+	{
+		title: "Programming Basics in JavaScript",
+		href: "/article/basic-javascript",
+		body: "This serves as a quick reference to some basic programming principles and JavaScript syntax."
+	},
+]
+
+---
+
+{resourceList.map((resource)=>(
+<ResourceLink href={resource.href} title={resource.title}>{resource.body}</ResourceLing>
+))}
+
