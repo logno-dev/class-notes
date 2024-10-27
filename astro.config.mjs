@@ -14,7 +14,7 @@ export default defineConfig({
             title: "Class Notes",
             customCss: ["./src/styles/custom.css"],
             editLink: {
-                baseUrl: "https://github.com/logno-dev/class-notes/",
+                baseUrl: "https://github.com/logno-dev/class-notes/tree/main",
             },
         }),
         sitemap(),
