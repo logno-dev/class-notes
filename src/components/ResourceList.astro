@@ -11,7 +11,7 @@ type Resource = {
 const resourceList: Resource[] = [
 	{
 		title: "Programming Basics in JavaScript",
-		href: "/notes/basic-javascript",
+		href: "/notes/lessons/basic-javascript",
 		body: "This serves as a quick reference to some basic programming principles and JavaScript syntax."
 	},
 ]
@@ -19,6 +19,6 @@ const resourceList: Resource[] = [
 ---
 
 {resourceList.map((resource)=>(
-<ResourceLink href={resource.href} title={resource.title}>{resource.body}</ResourceLing>
+<ResourceLink href={resource.href} title={resource.title}>{resource.body}</ResourceLink>
 ))}
 
