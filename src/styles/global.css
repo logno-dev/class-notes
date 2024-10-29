@@ -1,7 +1,7 @@
 :root {
-	--bg: black;
+	--bg: #04040f;
 	--bg-alt: #333;
-	--fc: white;
+	--fc: #dedede;
 	--accent: #ff7913;
 	--accent-two: #142d45;
 	background-color: var(--bg);

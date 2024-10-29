@@ -1,0 +1,109 @@
+---
+title: Loops
+description: Loop basics
+sidebar:
+  order: 3
+---
+import { Card } from '@astrojs/starlight/components';
+
+When coding, you will come across many situations where you need to do the something over and over again. Often times you will need to do that something a set amount of times, or until a certain condition is met.
+
+<Card title="Warning!" icon="warning" class="warning">
+  Loops are one of the easiest ways to crash a computer. If an exit condition is impossible to reach, the computer will run the loop infinitely and the computer will crash.
+  </Card>
+
+## While Loops
+
+We will start with a loop that you will likely never use. A while loop is a type of loop that will run continuously until a certain condition is met.
+
+```javascript
+let myNum = 0
+
+while (myNum < 10) {
+  console.log(myNum)
+  myNum = myNum + 1
+}
+```
+
+This loop will log `myNum` 10 times and `myNum` will increase by one with each loop. So the log will look like this:
+
+```bash
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+The statement `myNum < 10` that is between the parenthesis is called an **expression**. Expressions always resolve to a value. When the expression contains a comparison operator (like `==`,`<`,`>`,`<=`,`!=`, and so on) the expression will always resolve to a boolean.
+
+A while loop will run continuously while this expression resolves to `true` and it will not run while the expression resolves to `false`.
+
+```javascript
+
+while (false) {
+  // untouchable code
+}
+
+while (true) {
+  // runs infinitely
+  // DO NOT DO THIS. THIS WILL CRASH YOU COMPUTER
+}
+```
+
+Another form is this is the do...while loop. It is almost equivalent except that condition statement is interpreted after each loop. Meaning the code within the loop will always run a minimum of one time.
+
+```javascript
+do {
+  //some code
+  } while (condition == true)
+```
+
+The while loop is acceptable code in JavaScript, but I would venture to say that you will never see this loop in the wild. With a while loop, we have to meticulously ensure that our exit condition is met. In other terms, we have to ensure that our logic will at some point convert the expression following the `while` term to resolve to `false`.
+
+The more common option is the **for** loop.
+
+## For Loops
+
+A for loop lets you name a variable, declare a condition, and increment the variable, all in one concise snippet.
+
+```javascript
+for (let i = 0 ; i < 10 ; i++) {
+  // do something 10 times
+}
+```
+
+One of the advantages of this loop is that the variable declared in the first segment is locally scoped to the for loop. We will cover scope in more detail in another lesson, but for now, just know that the variable declared in the first segment is available within the loop and not outside of the loop.
+
+We can also nests loops to get some interesting behaviors.
+
+```javascript
+
+for (let i = 1 ; i <= 3 ; i++) {
+  for (let j = 1 ; i <= 3 ; j++) {
+    console.log(i + ":" + j)
+  }
+}
+
+// Output:
+// 1:1
+// 1:2
+// 1:3
+// 2:1
+// 2:2
+// 2:3
+// 3:1
+// 3:2
+// 3:3
+```
+
+This can come in handy when generating things like grids with rows and columns.
+
+## Conclusion
+
+As we advance, we will expand upon the concept of loops by incorporating arrays. We can use loops to iterate through arrays and handle the values conditionally. Eventually, we will use iterators that are built into the array type that simplify syntax while adding very useful features.

@@ -19,6 +19,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<img src="banner2.png" class="banner">
 		</div>
 		<main>
+			<section>
+				<h5>
+Welcome! Take advantage of some of the quick resources below, or head over to the <a href="/notes">notes page</a> for in-depth lessons and reference sheets.
+				</h5>
+			</section>
 			<section class="resource-list">
 				<h2>Quick Resources</h2>
 <ResourceList />
@@ -30,6 +35,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 
 	<style>
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
 .resource-list {
 	display: flex;
 	flex-direction: column;
