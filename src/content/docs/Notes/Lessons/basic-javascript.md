@@ -202,7 +202,7 @@ Dot notation is far more common and generally recommended. Bracket notation is u
 
 Thus far, everything I have discussed is mostly useless on its own. We need a way get things done. We want to be able to type up some code and use it over and over again without having to re-type it every time. This is what functions do for us. I will go much deeper into functions in a later section, here I will simply cover some of the syntax.
 
-There are multiple types of functions and multiple ways to declare functions. The following is the most typical way to create function:
+There are multiple types of functions and multiple ways to declare functions. The following is the most typical way to create a function:
 
 ```javascript
 function myFunc() {

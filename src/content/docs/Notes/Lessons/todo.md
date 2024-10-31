@@ -12,3 +12,4 @@ draft: true
 - [ ] Command Line
 - [ ] Node.js
 - [ ] Linux
+- [ ] Choose a language
