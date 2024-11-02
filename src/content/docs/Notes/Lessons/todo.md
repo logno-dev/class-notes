@@ -3,7 +3,8 @@ title: Todo
 draft: true
 ---
 
-- [ ] Scope
+- [x] Scope
+- [x] If
 - [ ] More Functions
 - [ ] Classes
 - [ ] HTML
