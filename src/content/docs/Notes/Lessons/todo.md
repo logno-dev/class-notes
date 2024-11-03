@@ -5,6 +5,7 @@ draft: true
 
 - [x] Scope
 - [x] If
+- [ ] Operators
 - [ ] More Functions
 - [ ] Classes
 - [ ] HTML
