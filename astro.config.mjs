@@ -48,10 +48,7 @@ export default defineConfig({
                             label: "Operators",
                             link: "lessons/operators",
                         },
-                        {
-                            label: "todo",
-                            link: "lessons/todo",
-                        },
+                        "lessons/todo",
                         {
                             label: "Path: Web Dev",
                             items: [
