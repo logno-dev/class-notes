@@ -5,16 +5,16 @@ import { Code } from '@astrojs/starlight/components';
 export const htmlExample = `<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Example Site</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Example Site</title>
+  </head>
 
-<body>
-  <h1>Example Site</h1>
-  <p>This is a very basic website.</p>
-</body>
+  <body>
+    <h1>Example Site</h1>
+    <p>This is a very basic website.</p>
+  </body>
 
 </html>`
 
@@ -22,6 +22,24 @@ export const htmlExample = `<!DOCTYPE html>
 
 The following is a basic html file:
 
-<Code code={htmlExample} lang="html" title="index.hml" />
+<Code code={htmlExample} lang="html" title="index.html" />
 
+Let's first look at the filename itself, `index.html`. All HTML files named with the `.html` suffix. Without going too deep into how file systems work, this tells the operating system roughly how it should handle this file. The `index` part of this filename is also special. When we point our browser to a directory on a computer, and we don't point to a specific file, the browser will automatically display this `index.html`. So generally, when we are making a website, we start with a file called `index.html`.
 
+Next, lets look at the first line of the file: `<!DOCTYPE html>`. Much like the filename suffix tells the operating system how to handle a file, this tells the browser how to handle the contents of this file. In this case, the browser expects that markup to follow to be HTML.
+
+As we move on to the next line, we finally get to some opening and closing tags. In this case we are looking at the `<html>` tag. Notice that the opening `<html>` is matched at the end of the document with a closing `</html>`. Everything in between these two tags is what the browser will interpret to display our website. In the opening tag, there is an extra bit of text, `lang="en"`, this is called an **attribute**. Attributes further define the behavior of a tag. In this case, we are telling the browser that the spoken language we will be using in the HTML will be English.
+
+## Head
+
+We still haven't gotten to the point of displaying anything yet. Within an `<html>` tag pair, we typically have two sections; a `head` and a `body`. Within the head, we can do a lot. You will often see several `<meta>` tags in a head. Meta have many functions including what character set you will be using (you will basically always use UTF-8), or how the browser should handle your site on different devices, or what terms search engines should look for. Let's not worry about that for now though, just know that you will always minimally include the two meta tags shown in this example.
+
+Following the `meta` tags, we have a `<title>` tag. The text between the `title` tags is what will be displayed in the browser tab or window title bar.
+
+As we advance, we will also use tags in the head section to import style sheets and JavaScript files.
+
+## Body
+
+Now we can actually start displaying elements. The `<body>` tag of an HTML file is where we put all the elements that we want to use to build our website. We can further divide the `body` into sections that describe the content on the page. For now, we are just adding a header and some text. Header tags come in six tiers starting at 1 and ending in 6, with 1 being the largest. According to the standard, a website should only contain one pair of `<h1>` tags. This leaves us with a `<p>` tag which represents a paragraph.
+
+This is the basic structure of an HTML document, and near the bear minimum to display a website. In the following lessons, we will take a closer look at some of the specific tags.
